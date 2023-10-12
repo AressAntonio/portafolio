@@ -1,13 +1,23 @@
 ---
-import Layout  from "../layouts/Layout.astro"
-import Header from '../components/Header.astro';
-import HeaderButton from '../components/HeaderButton.astro';
+import Layout  from "../layouts/Layout.astro";
+const Title = "aressantonio";
 ---
 
 
 
-<Layout class="ARESSANTONIO">
- 
+<Layout title={Title}>
+    
+    <div class="mx-auto text-center mb-8 lg:mb-16">
+        <h1 class="text-6xl text-white font-bold animate-bounce">
+            AressAntonio<hr>
+        </h1>
+        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+            ING. en EV & ND||Programador Jr.||Web Developer.
+        </p>
+    </div>
+    <nav class="flex flex-col items-center 
+    justify-between w-full text-center 
+    md:flex-row">
    
 </Layout> 
 

@@ -1,4 +1,7 @@
----import Header from '../components/Header.astro';
+---
+import Header from '../components/Header.astro';
+//import HeaderButton from '../../components/HeaderButton.astro';
+import Footer from '../components/Footer.astro';
 
 
 interface Props {
@@ -19,11 +22,12 @@ const { title } = Astro.props;
 		<title>{title}</title>
 		
 	</head>
-	<body class="bg-neutral-700 min-h-screen pb-32">
+	<body class="bg-neutral-700  pb-32 flex flex-col h-screen">
 		<Header/>
 		<main class="max-w-5xl px-4 m-auto">
 			<slot />
 		</main>
+		<Footer />
 		
 	</body>
 </html>
@@ -33,5 +37,7 @@ const { title } = Astro.props;
 		background: #6580c2;
 		background-size: 224px;
 		color-scheme: dark light;
+		width: 100%;
+	    height: auto;
 	}
 </style>
