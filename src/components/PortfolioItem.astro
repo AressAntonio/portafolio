@@ -1,0 +1,29 @@
+---
+export interface Props {
+    imagen: string
+    proyecto: string
+    stack: string
+    repo: string
+    textRepo: string
+}
+
+const {imagen, proyecto, stack, repo, textRepo } = Astro.props;
+
+
+---
+
+    <div class="p-6">
+        <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src= {imagen} alt="blog">
+        <h2 class="mb-8 text-xs font-semibold tracking-widest text-white uppercase">
+            {proyecto}
+        </h2>
+        <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">
+            {stack} 
+        </h1>
+
+        <div class="mt-4">
+            <a href= {repo} target="_blank" class="inline-flex items-center mt-4 font-semibold text-white lg:mb-0 hover:text-violet-500" title="read more"> 
+                {textRepo}
+            </a>
+        </div>
+    </div>
