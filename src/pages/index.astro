@@ -1,4 +1,5 @@
 ---
+import Card from "../components/Card.astro";
 import Layout  from "../layouts/Layout.astro";
 const Title = "aressantonio";
 ---
@@ -7,16 +8,16 @@ const Title = "aressantonio";
 
 <Layout title={Title}>
     
-    <div class="mx-auto text-center mb-8 lg:mb-16" transition:animate="slide">
-        <h1 class="text-6xl text-white font-bold animate-bounce">
-            AressAntonio<hr>
-        </h1>
-        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-            Ingeniero en Informática especializado 
-            en Entornos Virtuales y Negocios Digitales. || Web Developer.
-        </p>
+    <div class="mx-auto text-center mb-5 lg:mb-16" transition:animate="slide">
+        <Card />
     </div>
     
 </Layout> 
 
 
+<style>
+    div{
+    margin-top: -10px;
+    margin-bottom: 195px;
+    }
+</style>

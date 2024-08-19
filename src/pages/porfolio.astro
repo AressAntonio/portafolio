@@ -8,7 +8,7 @@ const datos = [
     {
         imagen: '../conversor.gif', 
         proyecto: 'Proyecto 1->> Conversor de Moneda y Temperatura.', 
-        stack: 'Stack: Java OOP, Libreria Swing for Java y Libreria JOpane for Java.',
+        stack: 'Stack: Java POO, Libreria Swing for Java y Libreria JOpane for Java.',
         repo: 'https://github.com/AressAntonio/Conversor_MonedaTemperatura',
        textRepo: 'Ir a repositorio del proyecto »'
     },
@@ -56,15 +56,21 @@ const datos = [
 <Layout title={Title}>
  
  <section transition:animate="fade">
-    <h1 transition:animate="fade">Estos son alguno de mis proyectos:</h1>
 
+    <h1 transition:animate="fade">
+        <span class="bg-purple-100 text-purple-800 text-xm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">
+            Estos son algunos de mis proyectos:
+        </span>
+    </h1>
     <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
 
-        <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
+        <div id="projec-card" class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
             {
+                
                 datos.map((dato)=>(
                     <PortfolioItem {...dato}/>
                 ))
+
             }
         </div>
        
@@ -75,8 +81,7 @@ const datos = [
 
 <style>
     section{
-        margin-top: -35px;
-        margin-bottom: 50px;
+        margin-top: -15px;
+        margin-bottom: 160px;
     }
 </style>
-

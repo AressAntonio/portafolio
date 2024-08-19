@@ -12,8 +12,8 @@ const {imagen, proyecto, stack, repo, textRepo } = Astro.props;
 
 ---
 
-    <div class="p-6">
-        <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src= {imagen} alt="blog">
+    <div id="projec-card" class="p-6">
+        <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src= {imagen} alt="blog" loading="lazy">
         <h2 class="mb-8 text-xs font-semibold tracking-widest text-white uppercase">
             {proyecto}
         </h2>
@@ -27,3 +27,6 @@ const {imagen, proyecto, stack, repo, textRepo } = Astro.props;
             </a>
         </div>
     </div>
+
+
+   
