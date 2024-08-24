@@ -66,6 +66,8 @@ const Title = "Sobre mi."
         justify-content: center;
         flex-wrap: wrap;
         margin-bottom: 200px;
+
+        
     }
    
     .aboutme .info{
@@ -79,6 +81,8 @@ const Title = "Sobre mi."
     box-sizing: border-box;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
     flex-direction: column;
+
+    animation: 1.5s ring linear;
     }
 
     .aboutme .info a{
@@ -246,5 +250,49 @@ const Title = "Sobre mi."
   visibility: visible;
   opacity: 1;
   cursor: pointer;
+}
+
+
+@keyframes ring {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-45px)
+    }
+
+    24% {
+        opacity: 1
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateY(-24px)
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateY(-12px)
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateY(-6px)
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateY(-4px)
+    }
+
+    25%,55%,75%,87% {
+        animation-timing-function: ease-out;
+        transform: translateY(0)
+    }
+
+    to {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0)
+    }
 }
 </style>

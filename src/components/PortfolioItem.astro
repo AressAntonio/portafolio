@@ -29,4 +29,19 @@ const {imagen, proyecto, stack, repo, textRepo } = Astro.props;
     </div>
 
 
-   
+   <style>
+
+    div{
+        animation: 1.5s slideUp linear;
+    }
+
+    @keyframes slideUp {
+    0% {
+        transform: translateY(300px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+   </style>

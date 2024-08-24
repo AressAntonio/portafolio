@@ -82,7 +82,6 @@
     flex-wrap: wrap;
     margin-top: -10px;
     margin-bottom: 20px;
-
     }
 
     .content-1{
@@ -105,6 +104,7 @@
     box-shadow: 5px 10px   darkblue;
 
     transform: rotateZ(-10deg);
+    animation: 1.4s slideIn  linear
     }
 
     .content2{
@@ -118,7 +118,7 @@
     flex-direction: column;
     flex-wrap: wrap;
 
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding: 5px 5px;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -127,6 +127,7 @@
     border-bottom: solid 2px  darkblue;
 
     box-shadow: 5px 10px   darkblue;
+    animation: 1.5s slideIn  linear
     }
 
     .content2:hover{
@@ -162,6 +163,7 @@
     left: 180px;
     margin-top: 15px;
     margin-bottom: 15px;
+    animation: 1.7s slideIn  linear
 
     }
 
@@ -177,4 +179,16 @@
     border-bottom: solid 2px lightgreen;
     color: lightgreen;
     }
+
+    @keyframes slideIn {
+    0% {
+        transform: translateY(600px) scale(6.2)
+    }
+
+    to {
+        transform: translateY(0) scale(1)
+    }
+
+}
+
 </style>
