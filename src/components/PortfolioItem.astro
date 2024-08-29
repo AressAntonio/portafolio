@@ -35,6 +35,21 @@ const {imagen, proyecto, stack, repo, textRepo } = Astro.props;
         animation: 1.5s slideUp linear;
     }
 
+    #projec-card{
+    border-radius: 12px;
+    border-left: solid 2px  darkblue;
+    border-bottom: solid 2px  darkblue;
+    box-shadow: 5px 10px   darkblue;
+    }
+    #projec-card:hover{
+    border-radius: 12px;
+    border-left: solid 2px  #fff;
+    border-bottom: solid 2px  #fff;
+    box-shadow: 5px 10px   #fff;
+    transform: scale(0.9);
+    cursor: pointer;
+    }
+
     @keyframes slideUp {
     0% {
         transform: translateY(300px)
